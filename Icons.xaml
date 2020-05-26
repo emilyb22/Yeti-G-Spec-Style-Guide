@@ -1,0 +1,121 @@
+﻿<Page x:Class="Yeti_G_Spec_Style_Guide.Icons"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:Yeti_G_Spec_Style_Guide"
+    xmlns:fa="http://schemas.fontawesome.io/icons/"
+    TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+    TextElement.FontWeight="Regular"
+    TextElement.FontSize="13"
+    TextOptions.TextFormattingMode="Ideal"
+    TextOptions.TextRenderingMode="Auto"
+    Background="{DynamicResource MaterialDesignPaper}"
+    FontFamily="{DynamicResource MaterialDesignFont}">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="30"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="1" Style="{StaticResource MaterialDesignHeadlineTextBlock}" Margin="0,20,0,0">Icons</TextBlock>
+
+        <TextBlock Grid.Row="1" Grid.Column="1" Style="{StaticResource MaterialDesignBody1TextBlock}">The icon library used is fontAwesome. The Nuget package must be downloaded (author is charri) then the following tag must be included at the top of each page:</TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="1" Text="xmlns:fa=&quot;http://schemas.fontawesome.io/icons/&quot;"></TextBlock>
+
+        <Grid Grid.Row="3" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="93.493"/>
+                <ColumnDefinition Width="56.507"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="150"/>
+            </Grid.ColumnDefinitions>
+
+            <Canvas Grid.Row="0" Grid.ColumnSpan="2">
+                <Ellipse Height="18" Fill="#f1caca" Width="18" Margin="0,0,0,0" />
+                <fa:FontAwesome Icon="Lock" Foreground="#c7254e" FontSize="12" VerticalAlignment="Center" Width="12" Height="12" Margin="3,2,0,0" />
+            </Canvas>
+            <TextBlock Grid.Row="1" Grid.ColumnSpan="2">Ellipse fill: #f1caca<LineBreak/>Icon fill: #c7254e <LineBreak/>Icon: Lock</TextBlock>
+
+            <Canvas Grid.Row="0" Grid.Column="2">
+                <Ellipse Height="18" Fill="#ffedbf" Width="18" Margin="0,0,0,0" />
+                <fa:FontAwesome Icon="FileText" Foreground="#d19600" FontSize="12" VerticalAlignment="Center" Width="12" Height="12" Margin="3,2,0,0" />
+            </Canvas>
+            <TextBlock Grid.Row="1" Grid.Column="2">Ellipse fill: #ffedbf<LineBreak/>Icon fill: #d19600 <LineBreak/>Icon: FileText</TextBlock>
+
+            <Canvas Grid.Row="0" Grid.Column="3">
+                <Ellipse Height="18" Fill="#FF93c47d" Width="18" Margin="0,0,0,0" />
+                <fa:FontAwesome Icon="Check" Foreground="DarkGreen" FontSize="12" VerticalAlignment="Center" Width="12" Height="12" Margin="3,2,0,0" />
+            </Canvas>
+            <TextBlock Grid.Row="1" Grid.Column="3">Ellipse fill: #FF93c47d<LineBreak/>Icon fill: DarkGreen <LineBreak/>Icon: Check</TextBlock>
+
+            <Canvas Grid.Row="0" Grid.Column="4">
+                <Ellipse Height="18" Fill="#cadbf1" Width="18" Margin="0,0,0,0" />
+                <fa:FontAwesome Icon="Info" Foreground="#0078d7" FontSize="12" VerticalAlignment="Center" Width="12" Height="12" Margin="3,2,0,0" />
+            </Canvas>
+            <TextBlock Grid.Row="1" Grid.Column="4">Ellipse fill: #cadbf1<LineBreak/>Icon fill: #0078d7 <LineBreak/>Icon: Info</TextBlock>
+
+            <Canvas Grid.Row="0" Grid.Column="5">
+                <Ellipse Height="18" Fill="#C0B7D6" Width="18" Margin="0,0,0,0" />
+                <fa:FontAwesome Icon="Hourglass1" Foreground="#412175" FontSize="11" VerticalAlignment="Center" Width="11" Height="11" Margin="3,3,0,0" />
+            </Canvas>
+            <TextBlock Grid.Row="1" Grid.Column="5">Ellipse fill: #C0B7D6<LineBreak/>Icon fill: #412175 <LineBreak/>Icon: Hourglass1</TextBlock>
+
+            <Canvas Grid.Row="0" Grid.Column="6">
+                <Ellipse Height="18" Fill="#cccccc" Width="18" Margin="0,0,0,0" />
+                <fa:FontAwesome Icon="Hourglass3" Foreground="#555" FontSize="11" VerticalAlignment="Center" Width="11" Height="11" Margin="3,3,0,0" />
+            </Canvas>
+            <TextBlock Grid.Row="1" Grid.Column="6">Ellipse fill: #cccccc<LineBreak/>Icon fill: #555 <LineBreak/>Icon: Hourglass3</TextBlock>
+
+            <Canvas Grid.Row="0" Grid.Column="7">
+                <Ellipse Height="18" Fill="#FFD6A9" Width="18" Margin="0,0,0,0" />
+                <fa:FontAwesome Icon="Pause" Foreground="#B35809" FontSize="12" VerticalAlignment="Center" Width="12" Height="12" Margin="3,2,0,0" />
+            </Canvas>
+            <TextBlock Grid.Row="1" Grid.Column="7">Ellipse fill: #FFD6A9<LineBreak/>Icon fill: #B35809 <LineBreak/>Icon: Pause</TextBlock>
+
+            <Canvas Grid.Row="0" Grid.Column="8">
+                <Ellipse Height="18" Fill="#f1caca" Width="18" Margin="0,0,0,0" />
+                <fa:FontAwesome Icon="Exclamation" Foreground="#c7254e" FontSize="12" VerticalAlignment="Center" Width="12" Height="12" Margin="3,2,0,0" />
+            </Canvas>
+            <TextBlock Grid.Row="1" Grid.Column="8">Ellipse fill: #f1caca<LineBreak/>Icon fill: #c7254e <LineBreak/>Icon: Exclamation</TextBlock>
+
+            <Canvas Grid.Row="2" Grid.Column="2">
+                <Ellipse Height="18" Fill="#cadbf1" Width="18" Margin="0,0,0,0" />
+                <fa:FontAwesome Icon="Exclamation" Foreground="#0078d7" FontSize="12" VerticalAlignment="Center" Width="12" Height="12" Margin="3,2,0,0" />
+            </Canvas>
+            <TextBlock Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2">Ellipse fill: #cadbf1<LineBreak/>Icon fill: #0078d7 <LineBreak/>Icon: TrashOutline</TextBlock>
+
+            <Canvas Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2">
+                <Ellipse Height="18" Fill="#f1caca" Width="18" Margin="0,0,0,0" />
+                <fa:FontAwesome Icon="Exclamation" Foreground="#c7254e" FontSize="12" VerticalAlignment="Center" Width="12" Height="12" Margin="3,2,0,0" />
+            </Canvas>
+            <TextBlock Grid.Row="3" Grid.Column="2">Ellipse fill: #cadbf1<LineBreak/>Icon fill: #0078d7 <LineBreak/>Icon: Exclamation</TextBlock>
+
+        </Grid>
+    </Grid>
+</Page>
